@@ -9,31 +9,49 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body data-bs-spy="scroll" data-bs-target="#header">
-    <header id="header">
-        <a href="#" class="logo">Cristian</a>
-        <nav class="navbar">
-            <a href="#home" class="nav-link">Home</a>
-            <a href="#education-section" class="nav-link">Education</a>
-            <a href="#skills-section" class="nav-link">Skills</a>
-            <a href="#work-section" class="nav-link">Employment History</a>
-            <a href="#project" class="nav-link">Projects</a>
-        <nav>
-    </header>
-    <section id="home" style="background-color: #081b29;">
-        <div class="home-container">
-            <div class="home-content">
-                <h1>Hi, I'm Cristian</h1>
-                <h3>Frontend Developer</h3>
-                <p>As a front-end developer, I create user-friendly interfaces using HTML, CSS, and JavaScript, focusing on functionality and design aesthetics.</p>
-                <a href="#education-section" class="btn btn-info">Learn More</a>
+    <nav id="navbar" class="navbar navbar-expand-md fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                <img src="./img/logo1.png" alt="Cristian" class="img-fluid" width="150">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="header" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li><a href="#hero" class="nav-link">Home</a></li>
+                    <li><a href="#education-section" class="nav-link">Education</a></li>
+                    <li><a href="#skills-section" class="nav-link">Skills</a></li>
+                    <li><a href="#work-section" class="nav-link">Employment History</a></li>
+                    <li><a href="#project" class="nav-link">Project</a></li>
+                </ul>
             </div>
-            <div class="home-image">
-                <img src="./images/33.jpg" alt="Cristian">
+        </div>
+    </nav>
+    <section id="hero">
+        <div class="hero-container">
+            <h4>Hello Friend!</h4>
+            <h1 class="pb-3 fw-bolder">I'm a <i style="color: #d34040;">Front-end Developer</i></h1>
+            <p class="fw-bolder">As a front-end developer, I create user-friendly interfaces using HTML, CSS, and JavaScript, focusing on functionality and design aesthetics.</p>
+            <a href="#education-section" class="btn btn-info">Learn More</a>
+        </div>
+    </section>
+    <section id="about" class="pt-md-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="./images/33.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-6 align-self-center mt-2">
+                    <h2>About <i style="color: #d34040;">Me</i></h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam atque sit possimus, officia perferendis aspernatur amet asperiores! Accusamus facilis vitae ipsam eligendi animi corrupti nobis necessitatibus voluptate molestiae cumque, non distinctio qui obcaecati tempore impedit.</p>
+                    <a href="#" class="btn" style="color: #fff; background-color: #d34040;">Resume</a>
+                </div>
             </div>
         </div>
     </section>
     <section id="education-section">
-       <div class="section-title"><h2>Education</h2></div> 
+        <div class="section-title"><h2>My <i style="color: #d34040;">Education</i></h2></div>
         <div class="container my-5">
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-4">
@@ -63,179 +81,213 @@
                             <h6 class="card-text">Kodego</h6>
                         </div>
                     </div>
-                    
                 </div>
             </div>
         </div>
     </section>
-
-    <section id="skills-section">
-        <div class="section-title"><h2>Skills</h2></div> 
-         <div class="container my-5">
-             <div class="row">
-                 <div class="col-lg-4 col-md-6 mb-4">
-                     <div class="card h-100 d-flex flex-column">
-                         <div class="card-body">
-                             <h2 class="card-title"><i class="fab fa-html5"></i> HTML</h2>
-                             <p class="card-text">Hypertext Markup Language</p>
-                         </div>
-                     </div>
-                 </div>
-                 <div class="col-lg-4 col-md-6 mb-4">
-                     <div class="card h-100 d-flex flex-column">
-                         <div class="card-body">
-                             <h2 class="card-title"><i class="fab fa-css3"></i> CSS</h2>
-                             <p class="card-text">Cascading Style Sheets</p>
-                        
-                         </div>
-                     </div>
-                 </div>
-                 <div class="col-lg-4 col-md-6 mb-4">
-                     <div class="card h-100 d-flex flex-column">
-                         <div class="card-body">
-                             <h2 class="card-title"><i class="fa-brands fa-bootstrap"></i> Bootstrap</h2>
-                            
-                         </div>
-                     </div>
-                     
-                 </div>
-             </div>
-         </div>
-     </section>
-     <section id="work-section">
-        <div class="section-title "><h2>Work</h2></div> 
-         <div class="container my-5">
-             <div class="flex-column">
-                 <div class="col-lg-4 col-md-6 mb-4">
-                     <div class="card h-100 d-flex flex-column">
-                         <div class="card-body">
-                             <h3 class="card-title"> Warehouse Helper</3>
-                             <h6 class="card-text">Central lumber</h6>
-                         </div>
-                     </div>
-                 </div>
-                 <div class="col-lg-4 col-md-6 mb-4">
-                     <div class="card h-100 d-flex flex-column">
-                         <div class="card-body">
-                             <h2 class="card-title"> Warehouse Helper</h2>
-                             <p class="card-text">Zest-O Corp.</p>
-                        
-                         </div>
-                     </div>
-                 </div>
-                 <div class="col-lg-4 col-md-6 mb-4">
-                     <div class="card h-100 d-flex flex-column">
-                         <div class="card-body">
-                             <h2 class="card-title"> Bagger</h2>
-                             <p class="card-text">SM</p>
-                         </div>
-                     </div>
-                     
-                 </div>
-             </div>
-         </div>
-     </section>
-     <section id="project">
-        <div class="container">
-          <div class="row mb-3">
-            <div class="text-center mt-5 pt-5 ">
-              <h2>Project</h2>
-            </div>
+    <section id="skills-section" class="skills py-5 position-relative">
+      <div class="section-title"><h2>My <i style="color: #d34040;">Skills</i></h2></div>
+      <div class="container my-5">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+              <div class="col mb-4">
+                  <div class="card h-100 d-flex flex-column">
+                      <div class="card-body">
+                          <img src="./images/html.png" class="img-fluid" style="height: 80px;" alt="HTML">
+                          <h3 class="pt-2">HTML</h3>
+                      </div>
+                  </div>
+              </div>
+              <div class="col mb-4">
+                  <div class="card h-100 d-flex flex-column">
+                      <div class="card-body">
+                          <img src="./images/css.png" class="img-fluid" style="height: 80px;" alt="CSS">
+                          <h3 class="pt-2">CSS</h3>
+                      </div>
+                  </div>
+              </div>
+              <div class="col mb-4">
+                  <div class="card h-100 d-flex flex-column">
+                      <div class="card-body">
+                          <img src="./images/bootstrap.png" class="img-fluid" style="height: 80px;" alt="Bootstrap">
+                          <h3 class="pt-2">Bootstrap</h3>
+                      </div>
+                  </div>
+              </div>
+              <div class="col mb-4">
+                  <div class="card h-100 d-flex flex-column">
+                      <div class="card-body">
+                          <img src="./images/js.png" class="img-fluid" style="height: 80px;" alt="JavaScript">
+                          <h3 class="pt-2">JavaScript</h3>
+                      </div>
+                  </div>
+              </div>
+              <div class="col mb-4">
+                  <div class="card h-100 d-flex flex-column">
+                      <div class="card-body">
+                          <img src="./images/php.png" class="img-fluid" style="height: 80px;" alt="PHP">
+                          <h3 class="pt-2">PHP</h3>
+                      </div>
+                  </div>
+              </div>
+              <div class="col mb-4">
+                  <div class="card h-100 d-flex flex-column">
+                      <div class="card-body">
+                          <img src="./images/laravel.png" class="img-fluid" style="height: 80px;" alt="Laravel">
+                          <h3 class="pt-2">LARAVEL</h3>
+                      </div>
+                  </div>
+              </div>
+              <div class="col mb-4">
+                  <div class="card h-100 d-flex flex-column">
+                      <div class="card-body">
+                          <img src="./images/python.png" class="img-fluid" style="height: 80px;" alt="Python">
+                          <h3 class="pt-2">Python</h3>
+                      </div>
+                  </div>
+              </div>
+              <div class="col mb-4">
+                  <div class="card h-100 d-flex flex-column">
+                      <div class="card-body">
+                          <img src="./images/react.png" class="img-fluid" style="height: 80px;" alt="React">
+                          <h3 class="pt-2">React</h3>
+                      </div>
+                  </div>
+              </div>
           </div>
-          <div class="row" >
-            <div class="col-md-4">
-              <div class="card">
-                <img
-                  src="./images/kodeledger.png"
-                  alt="Card image"
-                  style="width: 100%"
-                  class="card-img-top"
-                />
-                <div class="card-body">
-                  <h4 class="card-title">Kodeledger</h4>
-                  <p class="card-text">
-                    
-                  </p>
-                  <a href="#" class="btn btn-info">Learn More</a>
+      </div>
+  </section>
+  <section id="work-section">
+    <div class="section-title"><h2>My <i style="color: #d34040;">Work</i></h2></div>
+    <div class="container my-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title">Warehouse Helper</h3>
+                        <p class="card-text">Central Lumber</p>
+                    </div>
                 </div>
-              </div>
             </div>
-  
-            <div class="col-md-4">
-              <div class="card">
-                <img
-                  src="./images/kodenews.png"
-                  alt="Card image"
-                  style="width: 100%"
-                  class="card-img-top"
-                />
-                <div class="card-body">
-                  <h4 class="card-title">Kodenews</h4>
-                  <p class="card-text">
-                    
-                  </p>
-                  <a href="#" class="btn btn-info">Learn More</a>
+            <div class="col mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title">Warehouse Helper</h3>
+                        <p class="card-text">Zest-O Corp.</p>
+                    </div>
                 </div>
-              </div>
             </div>
-  
-            <div class="col-md-4">
-              <div class="card">
-                <img
-                  src="./images/Koderesto.png"
-                  alt="Card image"
-                  style="width: 100%"
-                  class="card-img-top"
-                />
-                <div class="card-body">
-                  <h4 class="card-title">KodeResto</h4>
-                  <p class="card-text">
-                   
-                  </p>
-                  <a href="#" class="btn btn-info">Learn More</a>
+            <div class="col mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title">Bagger</h3>
+                        <p class="card-text">SM</p>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </section>
-      <footer id="footer">
+    </div>
+</section>
+    <section id="project">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="text-center mt-5 pt-5">
+                    <h2>My <i style="color: #d34040;">Project</i></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 pb-2">
+                    <div class="card">
+                        <img src="./images/kodeledger.png" alt="Kodeledger" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <h4 class="card-title">Kodeledger</h4>
+                            <a href="#" class="btn btn-info">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 pb-2">
+                    <div class="card">
+                        <img src="./images/kodenews.png" alt="Kodenews" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <h4 class="card-title">Kodenews</h4>
+                            <a href="#" class="btn btn-info">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 pb-5">
+                    <div class="card">
+                        <img src="./images/Koderesto.png" alt="KodeResto" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <h4 class="card-title">KodeResto</h4>
+                            <a href="#" class="btn btn-info">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
         <div class="container">
             <div class="row">
-            <div class="icon col-md-6 ">
-                <ul class="list-unstyled row mt-5">
-                <li><i class="fab fa-facebook"> facebook</i></li>
-                <li><i class="fab fa-instagram pt-2"> instagram</i></li>
-                <li><i class="fab fa-twitter pt-2"> twitter</i></li>
-                <li><i class="fab fa-google pt-2"> google</i></li>
-            </ul>
+              <div class="col-md-6">
+                <h2 class="py-2" style="text-align: justify;">Get In Touch</h2>
+                <div class="row g-3 row-cols-2" style="text-align: justify;">
+                    <a href="mailto:cristianodiong1@gmail.com" class="nav-link">
+                        <div class="details">
+                            <div class="box bg-danger d-inline-block py-1 px-2">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <span>Email</span>
+                        </div>
+                    </a>
+                    <a href="https://x.com/OdiongCris36473" class="nav-link">
+                        <div class="details">
+                            <div class="box bg-danger d-inline-block py-1 px-2">
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                            <span>twitter <span>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/cristianodiong/" class="nav-link">
+                        <div class="details">
+                            <div class="box bg-danger d-inline-block py-1 px-2">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <span>Instagram</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/chaan8521" class="nav-link">
+                        <div class="details">
+                            <div class="box bg-danger d-inline-block py-1 px-2">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <span>Github</span>
+                        </div>
+                    </a>
+                </div>
             </div>
-            <div class="contact col-md-6">
-                <form class="mt-4">
-                    <div class="form-group">
-                      <label for="phone-number">Phone Number:</label>
-                      <input type="phone-number" class="form-control" id="phone-number" placeholder="Number">
-                    </div>
-                    <div class="form-group">
-                      <label for="email">Email:</label>
-                      <input type="text" class="form-control" id="email" placeholder="Email">
-                    </div>
-                  </form>
-                  <a href="form-control" class="btn btn-info">Submit</a>
+                <div class="contact col-md-6">
+                    <form class="mt-4">
+                        <div class="form-group">
+                            <label for="phone-number">Phone Number:</label>
+                            <input type="tel" class="form-control" id="phone-number" placeholder="Number">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                    </form>
+                    <a href="#" class="btn btn-info">Submit</a>
+                </div>
             </div>
-        </div>
         </div>
         <div class="container">
             <div class="row mt-5">
-              <div class="col-md-12 text-center">
-                <p>Copyright 2024 | Cristian Portfolio</p>
-              </div>
+                <div class="col-md-12 text-center">
+                    <p>Copyright 2024 | Cristian Portfolio</p>
+                </div>
             </div>
-          </div>
-
-      </footer>
-     
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    
 </body>
 </html>

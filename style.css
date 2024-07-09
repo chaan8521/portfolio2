@@ -1,110 +1,95 @@
-.home-content {  
-    color: #ededed;
+/* General styles */
+body {
+    font-family: Arial, sans-serif; /* Adjust as per your design */
+    margin: 0;
+    padding: 0;
 }
 
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 10%;
-    background-color: transparent;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
+/* Navbar styles */
+#navbar .navbar-nav {
+    text-align: center;
 }
 
-
-.logo {
-    font-size: 25px;
-    color: #ededed;
-    text-decoration: none;
-    font-weight: 500;
+.navbar {
+    background-color: #FBF6E2;
 }
+
 .navbar a {
     font-size: 18px;
-    color: #ededed;
+    color: #131842;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 35px;  
+    margin-left: 35px;
     transition: .3s;
 }
 
-#container{
-    display: flex;
-    flex-direction: row;
-    padding: 50px;
-}
-#container h2{
-    text-align: center;
-}
-.section-grid{
-    display: flex;
-    flex-direction: row;
-    align-items: center;   
-}
-.section-item{
-    padding: 50px;
-}
 .navbar a:hover {
-    color: #0177a6;
+    color: #d34040;
 }
-#header .nav-link.active {
-    background-color: yellow;
-    color: black;
-    transform: translateY(-10px);
-    box-shadow: 0 4px 20px rgba(34, 221, 75, 0.932);
-  }
-#home {
-    height: 100vh;
+
+/* Hero section styles */
+#hero {
+    background: url(./images/developer.jpg) no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    text-align: center;
+    padding: 10% 5%;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 0 10%;
-}
-#home .btn:hover{
-    background-color: yellow;
-    color: black;
-    transform: translateX(10px);
-    box-shadow: 0 4px 20px rgba(34, 221, 75, 0.932);
-
+    color: #ededed;
 }
 
-.home-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.home-content {
+.hero-content {
     max-width: 600px;
     line-height: 1.2;
 }
 
-.home-content h1 {
+.hero-content h1 {
     font-size: 56px;
     font-weight: 700;
+    margin-bottom: 20px;
 }
 
-.home-content h3 {
-    font-size: 32px;
-    font-weight: 700;
-    color: #0177a6;
-}
-
-.home-content p {
+.hero-content p {
     font-size: 16px;
 }
 
-.home-image img {
-    width: 300px;
-    height: auto;
-    border-radius: 20px;
+.hero-container h4 {
+    font-family: "Sarabun", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
 }
-.card {
+
+.hero-container .btn:hover {
+    background-color: yellow;
+    color: black;
+    transform: translateX(10px);
+    box-shadow: 0 4px 20px rgba(34, 221, 75, 0.932);
+}
+
+/* Section title styles */
+.section-title {
+    text-align: center;
+    color: #131842;
+    margin-top: 100px;
+    font-weight: bold;
     position: relative;
 }
+
+.section-title h2 {
+    font-size: 2.5rem;
+}
+
+/* Card styles */
+.card {
+    background-color: transparent;
+    border: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
 .card::after {
     content: "";
     position: absolute;
@@ -114,66 +99,84 @@ header {
     height: 5px;
     background-color: #081b29;
 }
-#education-section {
-    background: url(./images/education.png) no-repeat center center;
-    background-size: cover;
-    padding: 50px 0;
-    height: 100vh;
-    text-align: center;
-}
-.section-title{
-    text-align: center;
-    color: white;
-    align-items: center;
-    margin-top: 100px;
-    font-weight: 100%;
-    position: relative;
-    
-}
-.card-bottom-line {
-    background-color: #081b29;
-    height: 10px;
-    width: 100%;
-    position: relative;
-    top: -10px;
-}
-.card {
-    background-color: transparent;
-    opacity: 80%;
-    border: none;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
+
 .card:hover {
     transform: translateY(10px);
     box-shadow: 0 4px 20px rgba(252, 253, 253, 0.932);
 }
+
+/* Education section styles */
+#education-section {
+    background-color: #FBF6E2;
+    min-height: 100vh;
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* Skills section styles */
 #skills-section {
-    background: url(./images/skills\ img.webp) no-repeat center center;
-    background-size: cover;
-    padding: 50px 0;
-    height: 100vh;
+    background-color: #ECCEAE;
+    min-height: 100vh;
+    padding: 40px 0;
     text-align: center;
 }
+
+/* Work section styles */
 #work-section {
-    background: url(./images/work.webp) no-repeat center center;
-    background-size: cover;
+    background-color: #FBF6E2;
+    min-height: 100vh;
     padding: 50px 0;
-    height: 100vh;
     text-align: center;
-}#work-section .section-title{
-    text-align: start !important;
-    padding-left: 17rem;
-    color: #0a2170 ;
-    font-size: xx-large;
 }
-#project{
-    background-color: #081b29;
-    height: 100vh;
+
+/* Project section styles */
+#project {
+    background-color: #ECCEAE;
+    min-height: 100vh;
+    padding: 50px 0;
+    text-align: center;
 }
-.icon{
+
+/* Footer styles */
+#footer {
+    background-color: #131842;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.icon {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
 }
-.icon li{
-    text-decoration: none;
+
+.icon li {
+    margin: 0 10px;
 }
-    
+
+/* Media query for smaller screens */
+@media (max-width: 767.98px) {
+    .hero-container {
+        padding-top: 10rem; /* Adjust padding for smaller screens */
+    }
+
+    .hero-content h1 {
+        font-size: 36px; /* Adjust font size for smaller screens */
+    }
+
+    .section-title h2 {
+        font-size: 1.5rem; /* Adjust section title size for smaller screens */
+    }
+
+    .card h3,
+    .card h2,
+    .card h4 {
+        font-size: 1.25rem; /* Adjust font size for smaller screens */
+    }
+}
+.icon ul li i {
+    font-size: 24px; /* Adjust the font size as per your requirement */
+}
