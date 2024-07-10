@@ -8,18 +8,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
-<body data-bs-spy="scroll" data-bs-target="#header">
+<body data-bs-spy="scroll" data-bs-target="#navbar">
     <nav id="navbar" class="navbar navbar-expand-md fixed-top">
         <div class="container">
             <a href="#" class="navbar-brand">
                 <img src="./img/logo1.png" alt="Cristian" class="img-fluid" width="150">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#header">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div id="header" class="collapse navbar-collapse">
                 <ul class="navbar-nav ms-auto">
                     <li><a href="#hero" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
                     <li><a href="#education-section" class="nav-link">Education</a></li>
                     <li><a href="#skills-section" class="nav-link">Skills</a></li>
                     <li><a href="#work-section" class="nav-link">Employment History</a></li>
@@ -31,21 +32,20 @@
     <section id="hero">
         <div class="hero-container">
             <h4>Hello Friend!</h4>
-            <h1 class="pb-3 fw-bolder">I'm a <i style="color: #d34040;">Front-end Developer</i></h1>
+            <h1 class="pb-3 fw-bolder"><span id="animated-text" style="color: #d34040;">I'm a Front-end Developer</span></h1>
             <p class="fw-bolder">As a front-end developer, I create user-friendly interfaces using HTML, CSS, and JavaScript, focusing on functionality and design aesthetics.</p>
-            <a href="#education-section" class="btn btn-info">Learn More</a>
         </div>
     </section>
     <section id="about" class="pt-md-3">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="img col-md-6 d-flex justify-content-center mt-5">
                     <img src="./images/33.jpg" alt="" class="img-fluid">
                 </div>
                 <div class="col-md-6 align-self-center mt-2">
                     <h2>About <i style="color: #d34040;">Me</i></h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam atque sit possimus, officia perferendis aspernatur amet asperiores! Accusamus facilis vitae ipsam eligendi animi corrupti nobis necessitatibus voluptate molestiae cumque, non distinctio qui obcaecati tempore impedit.</p>
-                    <a href="#" class="btn" style="color: #fff; background-color: #d34040;">Resume</a>
+                    <a href="./Resume-updated-1.pdf" class="btn" style="color: #fff; background-color: #d34040;">Resume</a>
                 </div>
             </div>
         </div>
@@ -69,6 +69,7 @@
                         <div class="card-body">
                             <h2 class="card-title"><i class="fa-solid fa-school"></i> High School</h2>
                             <h6 class="card-text">Cebu City Don Carlos A. Gothong Memorial National High School</h6>
+                            <br><br>
                             <p class="card-text">Class of 2019</p>
                         </div>
                     </div>
@@ -79,6 +80,8 @@
                             <h2 class="card-title"><i class="fa-solid fa-laptop-code"></i> Bootcamp</h2>
                             <h6 class="card-text">Full Stack Web Development Bootcamp</h6>
                             <h6 class="card-text">Kodego</h6>
+                            <br>
+                            <p class="card-text"></p>
                         </div>
                     </div>
                 </div>
@@ -140,7 +143,7 @@
               <div class="col mb-4">
                   <div class="card h-100 d-flex flex-column">
                       <div class="card-body">
-                          <img src="./images/python.png" class="img-fluid" style="height: 80px;" alt="Python">
+                          <img src="./images/phyton.png" class="img-fluid" style="height: 80px;" alt="Python">
                           <h3 class="pt-2">Python</h3>
                       </div>
                   </div>
@@ -200,7 +203,8 @@
                         <img src="./images/kodeledger.png" alt="Kodeledger" class="card-img-top img-fluid">
                         <div class="card-body">
                             <h4 class="card-title">Kodeledger</h4>
-                            <a href="#" class="btn btn-info">Learn More</a>
+                            <a href="https://chaan8521.github.io/kodeledger/" class="btn btn-danger">Preview</a>
+                            <a href="https://github.com/chaan8521/kodeledger" class="btn btn-git"><i class="fab fa-github px-1"></i>Github</a>
                         </div>
                     </div>
                 </div>
@@ -209,7 +213,8 @@
                         <img src="./images/kodenews.png" alt="Kodenews" class="card-img-top img-fluid">
                         <div class="card-body">
                             <h4 class="card-title">Kodenews</h4>
-                            <a href="#" class="btn btn-info">Learn More</a>
+                            <a href="https://chaan8521.github.io/Kodenews/" class="btn btn-danger">Preview</a>
+                            <a href="https://github.com/chaan8521/Kodenews" class="btn btn-git"><i class="fab fa-github px-1"></i>Github</a>
                         </div>
                     </div>
                 </div>
@@ -218,7 +223,8 @@
                         <img src="./images/Koderesto.png" alt="KodeResto" class="card-img-top img-fluid">
                         <div class="card-body">
                             <h4 class="card-title">KodeResto</h4>
-                            <a href="#" class="btn btn-info">Learn More</a>
+                            <a href="https://chaan8521.github.io/Koderesto/" class="btn btn-danger">Preview</a>
+                            <a href="https://github.com/chaan8521/Koderesto" class="btn btn-git"><i class="fab fa-github px-1"></i>Github</a>
                         </div>
                     </div>
                 </div>
@@ -229,55 +235,91 @@
         <div class="container">
             <div class="row">
               <div class="col-md-6">
-                <h2 class="py-2" style="text-align: justify;">Get In Touch</h2>
+                <h2 class="py-2 mb-5" style="text-align: justify;">Get In Touch</h2>
                 <div class="row g-3 row-cols-2" style="text-align: justify;">
                     <a href="mailto:cristianodiong1@gmail.com" class="nav-link">
                         <div class="details">
                             <div class="box bg-danger d-inline-block py-1 px-2">
-                                <i class="fas fa-envelope"></i>
+                                <i class="fas fa-envelope fa-2x"></i>
                             </div>
-                            <span>Email</span>
+                            <span class="fw-bolder">Email</span>
                         </div>
                     </a>
                     <a href="https://x.com/OdiongCris36473" class="nav-link">
                         <div class="details">
                             <div class="box bg-danger d-inline-block py-1 px-2">
-                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-twitter fa-2x"></i>
                             </div>
-                            <span>twitter <span>
+                            <span class="fw-bolder">twitter <span>
                         </div>
                     </a>
                     <a href="https://www.instagram.com/cristianodiong/" class="nav-link">
                         <div class="details">
                             <div class="box bg-danger d-inline-block py-1 px-2">
-                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-instagram fa-2x"></i>
                             </div>
-                            <span>Instagram</span>
+                            <span class="fw-bolder">Instagram</span>
                         </div>
                     </a>
                     <a href="https://github.com/chaan8521" class="nav-link">
                         <div class="details">
                             <div class="box bg-danger d-inline-block py-1 px-2">
-                                <i class="fab fa-github"></i>
+                                <i class="fab fa-github fa-2x"></i>
                             </div>
-                            <span>Github</span>
+                            <span class="fw-bolder">Github</span>
                         </div>
                     </a>
                 </div>
             </div>
-                <div class="contact col-md-6">
-                    <form class="mt-4">
-                        <div class="form-group">
-                            <label for="phone-number">Phone Number:</label>
-                            <input type="tel" class="form-control" id="phone-number" placeholder="Number">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email:</label>
-                            <input type="email" class="form-control" id="email" placeholder="Email">
-                        </div>
-                    </form>
-                    <a href="#" class="btn btn-info">Submit</a>
-                </div>
+            <div class="contact col-md-6">
+                <h3 class="py-2">Say Something</h3>
+                <form action="https://formspree.io/f/mdknnyly" class="contact-form" method="POST">
+                    <div class="form-group">
+                        <label for="fullName" class="form-label">Name:</label>
+                        <input
+                            type="text"
+                            name="name"
+                            id="fullName"
+                            placeholder="Enter full name"
+                            class="form-input"
+                            required
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email:</label>
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="john@example.com"
+                            class="form-input"
+                            required  
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="fullName" class="form-label">Subject:</label>
+                        <input
+                            type="text"
+                            name="subject"
+                            id="subject"
+                            placeholder="Hi Cristian, I need a website for my store."
+                            class="form-input"
+                            required
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea
+                            name="message"
+                            id="message"
+                            cols="40"
+                            rows="5"
+                            placeholder="Write a message..."
+                        ></textarea>
+                    </div>
+                    <button type="submit" class="form btn-git">Send</button>
+                </form>
+            </div>
             </div>
         </div>
         <div class="container">
@@ -289,5 +331,21 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const texts = ["I'm Cristian","I'm a Front-end Developer",];
+            let index = 0;
+            const animatedText = document.getElementById('animated-text');
+  
+            setInterval(() => {
+                animatedText.style.opacity = 0; // Start fading out
+                setTimeout(() => {
+                    animatedText.textContent = texts[index];
+                    animatedText.style.opacity = 1; // Fade in new text
+                    index = (index + 1) % texts.length;
+                }, 500); // Match this timeout to the CSS transition duration
+            }, 3000); // Change every 3 seconds
+        });
+    </script>
 </body>
 </html>
