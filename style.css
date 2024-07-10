@@ -9,7 +9,6 @@ body {
 #navbar .navbar-nav {
     text-align: center;
 }
-
 .navbar {
     background-color: #FBF6E2;
 }
@@ -27,6 +26,12 @@ body {
     color: #d34040;
 }
 
+#header .nav-link.active {
+    border-bottom: solid #d34040;
+    transform: translateY(8px);
+    box-shadow: 0 2px;
+}
+
 /* Hero section styles */
 #hero {
     background: url(./images/developer.jpg) no-repeat center center;
@@ -39,6 +44,9 @@ body {
     justify-content: center;
     align-items: center;
     color: #ededed;
+}
+#animated-text {
+    transition: opacity 0.5s ease-in-out;
 }
 
 .hero-content {
@@ -61,14 +69,6 @@ body {
     font-weight: bolder;
     font-style: normal;
 }
-
-.hero-container .btn:hover {
-    background-color: yellow;
-    color: black;
-    transform: translateX(10px);
-    box-shadow: 0 4px 20px rgba(34, 221, 75, 0.932);
-}
-
 /* Section title styles */
 .section-title {
     text-align: center;
@@ -128,13 +128,20 @@ body {
     padding: 50px 0;
     text-align: center;
 }
-
 /* Project section styles */
 #project {
     background-color: #ECCEAE;
     min-height: 100vh;
     padding: 50px 0;
     text-align: center;
+}
+#project .btn-git {
+    color: #d34040;
+    border-color: #d34040;
+}
+#project .btn-git:hover{
+    background-color: #d34040;
+    color: #ECCEAE;
 }
 
 /* Footer styles */
@@ -155,6 +162,29 @@ body {
 
 .icon li {
     margin: 0 10px;
+}
+#footer .container .details {
+    size: 20rem !important;
+    height: 50px;
+}
+.details .box{
+    border-radius: 50px;
+}
+form .form-group {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2px;
+}
+.form-label {
+    text-align: start;
+    padding-top: 10px;
+}
+.contact .btn-git {
+    color: #ededed;
+    background-color: #d34040;
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 10px;
 }
 
 /* Media query for smaller screens */
@@ -180,3 +210,4 @@ body {
 .icon ul li i {
     font-size: 24px; /* Adjust the font size as per your requirement */
 }
+
