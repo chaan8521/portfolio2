@@ -1,7 +1,12 @@
+
 body {
     font-family: Arial, sans-serif; 
     margin: 0;
     padding-top: 70px; 
+}
+.logo {
+    width: 80px; /* Change this value to your desired width */
+    height: 40px; 
 }
 
 #navbar .navbar-nav {
@@ -114,7 +119,6 @@ body {
 }
 
 .card::after {
-    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
@@ -126,6 +130,19 @@ body {
 .card:hover {
     transform: translateY(10px);
     box-shadow: 0 4px 20px rgba(252, 253, 253, 0.932);
+}
+/* about secton */
+#about-section{
+    background-color: #ECCEAE;
+}
+#about-section .container .row .submit-btn:hover{
+    background-color: #e72525 !important;
+}
+.img-fluid {
+    width: 80%;
+    border-radius: 70px;
+    margin-bottom: 20px;
+    max-height: 400px;
 }
 
 /* Education section */

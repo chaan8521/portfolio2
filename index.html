@@ -11,16 +11,14 @@
 <body data-bs-spy="scroll" data-bs-target="#navbar">
     <nav id="navbar" class="navbar navbar-expand-md fixed-top">
         <div class="container">
-            <a href="#" class="navbar-brand">
-                <img src="./img/logo1.png" alt="Cristian" class="img-fluid" width="150">
-            </a>
+                <img src="./images/Chan-logo.png" alt="Cristian" class="logo">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#header">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div id="header" class="collapse navbar-collapse">
                 <ul class="navbar-nav ms-auto">
                     <li><a href="#hero" class="nav-link">Home</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#about-section" class="nav-link">About</a></li>
                     <li><a href="#education-section" class="nav-link">Education</a></li>
                     <li><a href="#skills-section" class="nav-link">Skills</a></li>
                     <li><a href="#work-section" class="nav-link">Employment History</a></li>
@@ -36,16 +34,17 @@
             <p class="fw-bolder">As a front-end developer, I create user-friendly interfaces using HTML, CSS, and JavaScript, focusing on functionality and design aesthetics.</p>
         </div>
     </section>
-    <section id="about" class="pt-md-3">
+    <section id="about-section" class="pt-md-3">
         <div class="container">
+            <div class="section-title"> <h2>About <i style="color: #d34040;">Me</i></h2></div>
             <div class="row">
                 <div class="img col-md-6 d-flex justify-content-center mt-5">
-                    <img src="./images/33.jpg" alt="" class="img-fluid">
+                    <img src="./images/33.jpg" alt="image" class="img-fluid">
                 </div>
-                <div class="col-md-6 align-self-center mt-2">
-                    <h2>About <i style="color: #d34040;">Me</i></h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam atque sit possimus, officia perferendis aspernatur amet asperiores! Accusamus facilis vitae ipsam eligendi animi corrupti nobis necessitatibus voluptate molestiae cumque, non distinctio qui obcaecati tempore impedit.</p>
-                    <a href="./Resume-updated-1.pdf" class="btn mb-3" style="color: #fff; background-color: #d34040;">Resume</a>
+                <div class="col-md-5 mt-5">
+                    <h2 class="mb-3">Who am I?</h2>
+                    <p class="mt-4 "><i class="fw-bolder">Hello! I am Cristian</i>, an enthusiastic learner with a passion for technology and creativity. I love exploring new fields, tackling challenges, and finding innovative solutions. In my free time, I enjoy reading, coding, and playing computer games. I'm always excited to meet new people and learn from their experiences.</p>
+                    <a href="./Resume-updated-1.pdf" class="submit-btn btn mb-3" style="color: #fff; background-color: #d34040;">Resume</a>
                 </div>
             </div>
         </div>
@@ -344,7 +343,7 @@
                     index = (index + 1) % texts.length;
                 }, 500); // Match this timeout to the CSS transition duration
             }, 3000); // Change every 3 seconds
-        });
-    </script>
+        });   
+    </script>    
 </body>
 </html>
